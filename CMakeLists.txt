@@ -8,7 +8,13 @@ project(dishwasher-pico C CXX)
 pico_sdk_init()
 
 add_executable(dishwasher
-        main.c
+        src/main.c
+        src/ir/ir_raw.c
+        src/ir/ir_raw.h
+)
+
+target_include_directories(dishwasher PRIVATE
+        ${CMAKE_CURRENT_LIST_DIR}/src
 )
 
 target_link_libraries(dishwasher pico_stdlib)
