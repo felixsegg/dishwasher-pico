@@ -10,11 +10,12 @@ pico_sdk_init()
 add_executable(dishwasher
         src/main.c
         src/ir/ir_raw.c
-        src/ir/ir_raw.h
+        include/ir/ir_raw.h
 )
 
 target_include_directories(dishwasher PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}/src
+        ${CMAKE_CURRENT_LIST_DIR}/include
 )
 
 target_link_libraries(dishwasher pico_stdlib)
