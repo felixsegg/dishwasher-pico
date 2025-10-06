@@ -11,6 +11,8 @@ add_executable(dishwasher
         src/main.c
         src/ir/ir_raw.c
         include/ir/ir_raw.h
+        src/ir/cmd_listener.c
+        include/ir/cmd_listener.h
 )
 
 target_include_directories(dishwasher PRIVATE
