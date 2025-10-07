@@ -9,10 +9,14 @@ pico_sdk_init()
 
 add_executable(dishwasher
         src/main.c
-        src/ir/ir_raw.c
-        include/ir/ir_raw.h
         src/ir/cmd_listener.c
         include/ir/cmd_listener.h
+        src/ir/gpio_edge_receiver.c
+        src/ir/gpio_edge_receiver.h
+        src/ir/pulse_detector.c
+        src/ir/pulse_detector.h
+        src/ir/nec_decoder.c
+        src/ir/nec_decoder.h
 )
 
 target_include_directories(dishwasher PRIVATE

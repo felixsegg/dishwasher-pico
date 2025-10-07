@@ -6,10 +6,10 @@
 
 #include <stdint.h>
 
-void new_command(uint8_t adr, uint8_t cmd) {
+void new_cmd(uint8_t adr, uint8_t cmd) {
     // TODO
 }
 
-void end_last_command() {
+void end_cmd() {
     // TODO
 }
